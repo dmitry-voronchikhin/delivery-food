@@ -33,6 +33,7 @@ body {
 .input-search {
   width: 300px;
   background-image: url(../img/search.svg);
+  margin-left: auto;
 }
 .buttons {
   display: flex;
@@ -60,6 +61,9 @@ body {
 }
 .button-icon {
   margin-right: 6px;
+}
+.button-card-text {
+  margin-right: 10px;
 }
 .promo {
   box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
@@ -95,7 +99,6 @@ body {
 }
 .section-heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 44px;
 }
@@ -106,6 +109,7 @@ body {
   line-height: 42px;
   margin: 0;
   color: #000000;
+  margin-right: 30px;
 }
 .cards {
   display: flex;
@@ -119,12 +123,17 @@ body {
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
-  flex-basis: 31%;
+  flex-basis: 32%;
+  text-decoration: none;
 }
 .card-image {
   width: 384px;
   height: 250px;
   object-fit: cover;
+}
+.card-image-dish {
+  width: 384px;
+  height: 214px;
 }
 .card-text {
   padding: 20px 23px 35px 23px;
@@ -133,6 +142,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .card-title {
   margin: 0;
@@ -141,6 +151,9 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #000000;
+}
+.card-title-reg {
+  font-weight: 400;
 }
 .card-tag {
   font-style: normal;
@@ -156,6 +169,18 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+.card-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.card-price-bold {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 30px;
 }
 .rating {
   margin-right: 26px;
@@ -191,6 +216,12 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
+}
+.ingredients {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8c8c8c;
 }
 .footer {
   padding: 60px 0;
@@ -232,6 +263,9 @@ body {
     background-position: center right -250px;
     background-size: 550px;
   }
+  .card-image-dish {
+    width: 308px;
+  }
   .rating {
     margin-right: 15px;
   }
@@ -254,6 +288,9 @@ body {
     font-size: 18px;
     max-width: 400px;
   }
+  .card-image-dish {
+    width: 360px;
+  }
   .card {
     flex-basis: 48%;
   }
@@ -269,7 +306,7 @@ body {
   .card-info {
     flex-wrap: wrap;
   }
-  .rating {
+  .card .rating {
     flex-basis: 100%;
   }
   .card-title {
@@ -285,6 +322,9 @@ body {
   }
   .promo-text {
     margin-top: 0;
+  }
+  .card-image-dish {
+    width: 270px;
   }
 }
 
