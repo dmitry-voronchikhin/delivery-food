@@ -10,3 +10,5 @@ cancelOrderButton.addEventListener("click", toggleModal);
 function toggleModal() {
   modal.classList.toggle("modal-open");
 }
+
+new WOW().init();
