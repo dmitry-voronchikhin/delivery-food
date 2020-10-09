@@ -27,7 +27,7 @@
             <img src="img/user.svg" alt="user" class="button-icon" />
             <span class="button-text">Войти</span>
           </button>
-          <button class="button">
+          <button class="button" id="cart-button">
             <img
               src="img/shopping-cart.svg"
               alt="shopping-cart"
@@ -61,7 +61,11 @@
           </div>
           <div class="cards">
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image1.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image1.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">Пицца плюс</h3>
@@ -86,7 +90,11 @@
             <!-- /.card -->
 
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image2.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image2.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">Тануки</h3>
@@ -111,7 +119,11 @@
             <!-- /.card -->
 
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image3.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image3.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">FoodBand</h3>
@@ -136,7 +148,11 @@
             <!-- /.card -->
 
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image4.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image4.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">Жадина-пицца</h3>
@@ -161,7 +177,11 @@
             <!-- /.card -->
 
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image5.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image5.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">Точка еды</h3>
@@ -186,7 +206,11 @@
             <!-- /.card -->
 
             <a href="restaurant.html" class="card">
-              <img src="img/restaurants/image6.jpg" alt="image" class="card-image" />
+              <img
+                src="img/restaurants/image6.jpg"
+                alt="image"
+                class="card-image"
+              />
               <div class="card-text">
                 <div class="card-heading">
                   <h3 class="card-title">PizzaBurger</h3>
@@ -230,18 +254,96 @@
           <div class="social-links">
             <a href="#" class="social-link"
               ><img src="img/instagram.svg" alt="instagram"
-            />
+            /></a>
             <a href="#" class="social-link"
               ><img src="img/facebook.svg" alt="facebook"
-            />
+            /></a>
             <a href="#" class="social-link"
               ><img src="img/vk.svg" alt="vk"
-            />
+            /></a>
           </div>
           <!-- /.social-links -->
         </div>
         <!-- /.footer-block -->
       </div>
     </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Корзина</h3>
+          <button class="modal-close" id="modal-close-button">&times;</button>
+        </div>
+        <!-- /.modal-header -->
+        <div class="modal-body">
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <!-- /.foods-row -->
+
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <!-- /.foods-row -->
+
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <!-- /.foods-row -->
+
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <!-- /.foods-row -->
+
+          <div class="food-row">
+            <span class="food-name">Ролл угорь стандарт</span>
+            <strong class="food-price">250 ₽</strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter">1</span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+          <!-- /.foods-row -->
+        </div>
+        <!-- /.modal-body -->
+        <div class="modal-footer">
+          <span class="modal-pricetag">1250 ₽</span>
+          <div class="footer-buttons">
+            <button class="button button-primary">Оформить заказ</button
+            ><button class="button" id="cancel-order-button">Отмена</button>
+          </div>
+        </div>
+        <!-- /.modal-footer -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -254,6 +254,108 @@ body {
 .social-link:not(:last-child) {
   margin-right: 21px;
 }
+.modal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal-open {
+  display: flex;
+}
+.modal-dialog {
+  max-width: 780px;
+  width: 95%;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px 45px;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0;
+}
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 55px;
+  cursor: pointer;
+}
+.food-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 15px;
+  padding-right: 15px;
+}
+.food-name {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+}
+.food-price {
+  margin-left: auto;
+  margin-right: 47px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+}
+.food-counter {
+  display: flex;
+  align-items: center;
+}
+.counter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #40a9ff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #40a9ff;
+  width: 39px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.counter {
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 52px;
+}
+.footer-buttons {
+  display: flex;
+  align-items: center;
+}
+.modal-pricetag {
+  background: #262626;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 15px 20px;
+}
 
 @media (max-width: 1366px) {
   .container {
@@ -374,6 +476,14 @@ body {
   }
   .social-links {
     order: 2;
+  }
+  .modal-pricetag {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .modal-footer {
+    flex-wrap: wrap;
   }
 }
 
