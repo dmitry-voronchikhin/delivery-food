@@ -506,6 +506,9 @@ body {
   .section-heading {
     flex-wrap: wrap;
   }
+  .input-search {
+    flex: 1;
+  }
   .footer-block {
     flex-direction: column;
     flex-wrap: wrap;
